@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eaf6ff">
+<meta name="description" content="透過成人 STOP-Bang 問卷，了解打呼與睡眠呼吸中止風險。不記名，約需 3 分鐘。">
+<title>別怕打呼！睡眠風險評估雲</title>
+<style>
+:root{--ink:#173c56;--muted:#547086;--blue:#086fa6;--sky:#eaf6ff;--line:#d4e6ef;--soft:#f5faff;--white:#fff;--radius:24px}*{box-sizing:border-box}body{margin:0;background:#f3f9fd;color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.55}a{color:var(--blue)}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #bd7a19;outline-offset:4px}[hidden]{display:none!important}.shell{max-width:1160px;margin:auto;padding:0 36px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:28px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:18px;text-decoration:none;color:var(--ink)}.brand-icon{width:39px;height:39px;border:1px solid #c4e1f3;border-radius:13px;display:grid;place-items:center;background:white;color:var(--blue)}.brand small{display:block;font-size:10px;color:var(--muted);font-weight:500;letter-spacing:2px;line-height:1.3}.badge{font-size:12px;letter-spacing:.5px;color:var(--blue);background:#e2f2fc;border:1px solid #cce5f5;border-radius:99px;padding:6px 12px;white-space:nowrap}.layout{display:grid;grid-template-columns:330px minmax(0,1fr);gap:60px;align-items:start;padding:48px 0 32px}.eyebrow{font-size:11px;font-weight:700;letter-spacing:2.2px;color:var(--blue);margin:0 0 14px}.intro h1{font-size:42px;letter-spacing:-1.8px;line-height:1.35;margin:0 0 20px;font-weight:800}.intro h1 span{color:var(--blue)}.intro>p{font-size:15px;color:var(--muted);max-width:300px}.scene{width:100%;height:215px;margin:12px 0;color:#388ec0}.breathe{transform-origin:155px 136px;animation:breathe 5s ease-in-out infinite}.float{animation:float 6s ease-in-out infinite}.wave{stroke-dasharray:260;stroke-dashoffset:260;animation:wave 5s linear infinite}.spark{animation:twinkle 4s ease-in-out infinite}.trust{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.trust span:before{content:'✓';color:var(--blue);margin-right:6px}.side-note{font-size:12px!important;margin-top:24px!important;padding-top:20px;border-top:1px solid var(--line)}.panel{background:white;border:1px solid #e0edf5;border-radius:var(--radius);box-shadow:0 18px 60px #284d6e09;overflow:hidden}.panel-head{padding:24px 32px 20px;border-bottom:1px solid #edf3f7}.progress-label{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px;margin-bottom:10px}progress{appearance:none;width:100%;height:5px;display:block;border:0;border-radius:99px;overflow:hidden;background:#e8f1f8}progress::-webkit-progress-bar{background:#e8f1f8}progress::-webkit-progress-value{background:#48a4d4;transition:width .3s}progress::-moz-progress-bar{background:#48a4d4}.content{padding:30px 32px;min-height:410px;animation:enter .25s ease-out}h2{font-size:26px;line-height:1.45;letter-spacing:-.6px;margin:12px 0 14px}h3{font-size:18px;margin:0 0 10px}p{margin:0 0 16px}.muted{color:var(--muted);font-size:14px}.kicker{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--blue);font-weight:700;letter-spacing:1px}.dot{width:7px;height:7px;background:#52a9d4;border-radius:50%;box-shadow:0 0 0 5px #edf8fe}.pill-row{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.pill{padding:6px 12px;background:var(--soft);border-radius:8px;font-size:12px;color:var(--muted)}.notice{padding:16px 18px;background:var(--soft);border:1px solid #e1edf6;border-radius:14px;font-size:13px;color:var(--muted);margin:20px 0}.notice strong{color:var(--ink)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:28px 0}.steps div{padding:12px 8px;font-size:13px}.steps b{display:block;font-size:12px;color:var(--blue);margin-bottom:6px}.btn{border:0;border-radius:12px;padding:13px 21px;min-height:49px;background:var(--blue);color:white;font-weight:650;transition:background .15s,transform .15s}.btn:hover:not(:disabled){background:#055884;transform:translateY(-1px)}.btn.secondary{background:#eef6fb;color:var(--ink)}.btn.secondary:hover{background:#e0eef7}.btn.text{background:transparent;color:var(--muted);padding-left:8px;padding-right:8px}.btn.wide{width:100%}.actions{display:flex;justify-content:space-between;gap:12px;margin-top:28px}.actions.end{justify-content:flex-end}.option{display:flex;align-items:center;gap:13px;width:100%;min-height:62px;border:1px solid var(--line);border-radius:13px;padding:14px 18px;margin-top:12px;background:white;text-align:left;color:var(--ink)}.option:hover{background:#f4faff;border-color:#88bedc}.option[aria-checked=true]{border:2px solid var(--blue);background:#eff8fe;padding:13px 17px}.radio{width:19px;height:19px;border:1.5px solid #9eb7c7;border-radius:50%;display:grid;place-items:center;flex:none}.option[aria-checked=true] .radio{border-color:var(--blue)}.option[aria-checked=true] .radio:after{content:'';width:9px;height:9px;border-radius:50%;background:var(--blue)}.option small{margin-left:auto;color:var(--muted);font-size:11px}.option.unknown{font-size:13px;min-height:49px;color:var(--muted)}.help{padding:14px 16px;border-left:3px solid #9acfe9;background:#f6fbfe;font-size:13px;color:var(--muted);border-radius:0 10px 10px 0;margin:18px 0 22px}.field-grid{display:flex;gap:14px}.field{display:block;flex:1;min-width:0;font-size:13px;font-weight:600}.input-wrap{display:flex;align-items:center;gap:10px;border:1px solid #bdd5e4;border-radius:12px;padding:0 14px;margin-top:7px;background:#fff}.input-wrap:focus-within{outline:2px solid #1681b3;outline-offset:2px}.input-wrap input{width:100%;min-width:0;border:none;background:transparent;padding:15px 0;color:var(--ink);outline:none;font-size:21px}.input-wrap input:focus-visible{outline:none}.input-wrap span{font-size:12px;white-space:nowrap;color:var(--muted)}.check{display:flex;align-items:flex-start;gap:12px;padding:16px;border:1px solid var(--line);border-radius:13px;margin:12px 0;font-size:14px}.check input{width:19px;height:19px;accent-color:var(--blue);flex:none;margin-top:4px}.check small{display:block;color:var(--muted);font-size:12px;margin-top:5px}.error{color:#a33e2b;font-size:13px;margin-top:14px}.review-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #e7f0f6}.review-row strong{display:block;font-size:13px}.review-row span{font-size:13px;color:var(--muted)}.review-row button{border:0;background:#f2f8fc;color:var(--blue);padding:8px 12px;border-radius:8px;font-size:12px;flex:none}.result-orb{width:125px;height:125px;display:grid;place-content:center;text-align:center;border:8px solid #d9effc;border-radius:50%;background:#f4fbff;flex:none}.result-orb strong{font-size:42px;line-height:1.1;color:var(--blue)}.result-orb span{font-size:12px;color:var(--muted)}.result-top{display:flex;gap:22px;align-items:center;margin:22px 0}.result-top h2{margin:4px 0}.risk-chip{display:inline-block;padding:3px 10px;border-radius:6px;background:#e8f5fc;color:#076695;font-size:12px}.medium .risk-chip,.medium .result-orb{background:#fff8e8;color:#866018;border-color:#eedaa8}.high .risk-chip,.high .result-orb{background:#fff0ec;color:#a43d29;border-color:#f1c4b8}.incomplete .risk-chip{background:#edf0f5;color:#586573}.score-items{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.score-items span{padding:4px 10px;background:#f0f7fc;border-radius:6px;font-size:12px}.upload{padding:18px;background:#f7fafc;border:1px solid var(--line);border-radius:14px;margin-top:22px}.upload p{font-size:13px}.upload .btn{font-size:13px;padding:9px 15px;min-height:42px}.footer{display:flex;justify-content:space-between;gap:12px;padding:22px 0 30px;font-size:11px;color:var(--muted);border-top:1px solid var(--line)}.footer button{padding:0;border:0;background:none;color:var(--muted);font-size:11px;text-decoration:underline}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:12px 20px;border-radius:12px;background:#173c56;color:white;font-size:13px;max-width:90vw;box-shadow:0 4px 20px #173c5630;z-index:5}dialog{max-width:560px;width:calc(100% - 32px);border:1px solid var(--line);border-radius:20px;padding:28px;color:var(--ink)}dialog::backdrop{background:#173c5666}dialog p,dialog li{font-size:14px;color:var(--muted)}dialog .actions{flex-wrap:wrap}#focus-title:focus{outline:none}.mini-wave{width:55px;height:24px;margin-left:auto}.mini-wave path{stroke-dasharray:100;animation:wave 5s linear infinite}
+@keyframes breathe{50%{transform:translateY(-2px) scale(1,1.025)}}@keyframes float{50%{transform:translateY(-6px)}}@keyframes wave{to{stroke-dashoffset:0}}@keyframes twinkle{50%{opacity:.3}}@keyframes enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.layout{gap:28px;grid-template-columns:260px minmax(0,1fr)}.intro h1{font-size:34px}.shell{padding:0 24px}.content{padding:26px}.panel-head{padding:22px 26px}}
+@media(max-width:700px){.shell{padding:0 18px}.topbar{padding:19px 0}.brand{font-size:15px}.brand small{font-size:8px}.badge{font-size:10px;padding:4px 8px}.layout{display:block;padding:26px 0}.intro{position:relative;margin-bottom:24px;padding-right:100px;min-height:120px}.intro h1{font-size:29px;margin-bottom:8px;letter-spacing:-1px}.intro>p{font-size:12px;margin:0}.intro .eyebrow{font-size:9px;margin-bottom:8px}.scene{position:absolute;right:-8px;top:0;width:120px;height:120px;margin:0}.trust,.side-note{display:none}.content{padding:24px;min-height:0}.panel-head{padding:18px 24px}h2{font-size:23px}.steps{margin:20px 0}.footer{flex-wrap:wrap;gap:8px}.result-top{gap:16px}.result-orb{width:105px;height:105px}.result-orb strong{font-size:34px}.actions{flex-wrap:wrap}.actions .btn{flex:1}.field-grid{gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.wave{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><div class="brand"><span class="brand-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 15.5A8 8 0 0 1 8.5 5a8 8 0 1 0 10.5 10.5Z"/><path d="M17 3v4m-2-2h4"/></svg></span><span>別怕打呼！<small>睡眠風險評估雲</small></span></div><span class="badge">成人 STOP-Bang 自評</span></header>
+<main class="layout"><aside class="intro"><p class="eyebrow">A LITTLE CHECK, A BETTER NIGHT.</p><h1>認識你的呼吸，<br><span>找回安心好眠。</span></h1><p>從了解打呼開始，<br>給自己一個關心睡眠的機會。</p>
+<svg class="scene" viewBox="0 0 330 215" fill="none" aria-hidden="true"><ellipse cx="166" cy="177" rx="128" ry="19" fill="#e3f1fa"/><circle cx="169" cy="101" r="78" fill="#e9f5fd"/><g class="float" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M253 32c-15 8-11 28 6 29-16 13-37-2-31-19 4-10 15-14 25-10Z" fill="#fff"/><path d="M71 58h10m-5-5v10M280 91h8m-4-4v8"/><path class="spark" d="m117 27 2 5 5 2-5 2-2 5-2-5-5-2 5-2Z"/></g><g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M49 162h232M57 162v15m216-15v15"/><rect x="61" y="143" width="77" height="19" rx="9" fill="white"/><g class="breathe"><path d="M106 147c13-35 63-47 104-24 20 11 32 21 39 39H101" fill="#cee7f7"/><path d="M143 129c17 4 28 16 30 32"/><path d="M112 144c0 11-9 17-21 15s-20-12-17-23 13-14 23-11 16 10 15 19Z" fill="white"/><path d="M84 140c3 3 6 3 9 0m10 7h4"/></g><path class="wave" d="M171 91h17l6-11 8 22 8-29 8 18h34" stroke="#61add5"/><path d="M52 107h10l-10 11h10m10-26h14l-14 14h14" opacity=".7"/></g></svg>
+<div class="trust"><span>不收姓名</span><span>約 3 分鐘</span><span>8 個問題</span></div><p class="side-note">一份自評，是認識睡眠的起點。<br>不是診斷，也不用急著替自己貼標籤。</p></aside>
+<section class="panel" aria-label="睡眠風險問卷"><div class="panel-head"><div class="progress-label"><span id="progress-text">準備開始</span><span id="progress-side">為睡眠留一點時間</span></div><progress id="progress" max="8" value="0" aria-label="問卷進度"></progress></div><div id="app" class="content"></div></section></main>
+<footer class="footer"><span>別怕打呼！睡眠風險評估雲 · 關心每一次呼吸</span><span><button id="privacy-btn">隱私與資料說明</button>　·　<button id="clear-btn">清除本機資料</button></span></footer>
+</div><div id="toast" class="toast" role="status" hidden></div><dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+<script>
+'use strict';
+// Deployment settings. Never put a service-role key here. Blank endpoint = local-only mode.
+const CONFIG = Object.freeze({ endpoint: '', controller: '', contact: '', retentionDays: 0, consentVersion: '' });
+/* SHARED_SCORING_START */
+// Shared by the single-file UI and Edge Function. No rounding before classification.
+const VERSION = 'stopbang-basic-1.0';
+const KEYS = ['snore', 'tired', 'observed', 'pressure', 'bmi', 'age', 'neck', 'male'];
+function validAnswer(key, value) {
+  if (value === null) return true;
+  if (['snore','tired','observed','pressure','male'].includes(key)) return typeof value === 'boolean';
+  if (key === 'bmi') return value && typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === 2 && Number.isFinite(value.height) && value.height >= 100 && value.height <= 250 && Number.isFinite(value.weight) && value.weight >= 20 && value.weight <= 400;
+  if (key === 'age') return Number.isInteger(value) && value >= 18 && value <= 120;
+  if (key === 'neck') return Number.isFinite(value) && value >= 15 && value <= 100;
+  return false;
+}
+function validateAnswers(answers, partial = false) {
+  if (!answers || typeof answers !== 'object' || Array.isArray(answers)) return false;
+  if (Object.keys(answers).some(key => !KEYS.includes(key))) return false;
+  return KEYS.every(key => Object.hasOwn(answers,key) ? validAnswer(key, answers[key]) : partial);
+}
+function evaluate(answers) {
+  if (!validateAnswers(answers)) throw new Error('Invalid answers');
+  const points = {}, missing = [];
+  for (const key of KEYS) {
+    const value = answers[key];
+    if (value === null) { points[key] = null; missing.push(key); continue; }
+    if (key === 'bmi') points[key] = Number(value.weight / ((value.height / 100) ** 2) > 35);
+    else if (key === 'age') points[key] = Number(value > 50);
+    else if (key === 'neck') points[key] = Number(value > 40);
+    else points[key] = Number(value === true);
+  }
+  const score = Object.values(points).reduce((sum,p) => sum + (p || 0),0);
+  return { score, points, missing, complete: missing.length === 0, risk: missing.length ? 'incomplete' : score <= 2 ? 'low' : score <= 4 ? 'medium' : 'high' };
+}
+/* SHARED_SCORING_END */
+const questions = [
+ {key:'snore', tag:'S · SNORING', title:'你會大聲打呼嗎？', help:'例如：打呼聲比說話還大聲，或即使隔著關閉的房門仍聽得到。若不確定，可詢問同住者。', short:'大聲打呼'},
+ {key:'tired', tag:'T · TIREDNESS', title:'白天，你常覺得疲倦或想睡嗎？', help:'想想平常是否經常疲倦、乏力或嗜睡，而不只是偶爾熬夜後想睡。', short:'白天疲倦或嗜睡'},
+ {key:'observed', tag:'O · OBSERVED APNEA', title:'有人發現你睡覺時停止呼吸嗎？', help:'例如：同住者曾注意到你睡眠中呼吸暫停，或出現窒息、喘氣的情況。獨自睡覺、沒有人觀察過，可選「不知道」。', short:'目擊呼吸中止'},
+ {key:'pressure', tag:'P · BLOOD PRESSURE', title:'你有高血壓，或正在接受治療嗎？', help:'若醫師診斷有高血壓，或目前使用降血壓藥物，即使血壓已控制良好，仍請選「是」。', short:'高血壓'},
+ {key:'bmi', tag:'B · BODY MASS INDEX', title:'你的身高與體重是多少？', help:'用身高與體重計算 BMI。請填寫近期數值，計分門檻為 BMI 大於 35；此門檻是本量表規則，不代表一般體重健康標準。', short:'身體質量指數', fields:[['height','身高','公分',100,250,'0.1'],['weight','體重','公斤',20,400,'0.1']]},
+ {key:'age', tag:'A · AGE', title:'你現在幾歲？', help:'請填寫實足年齡，不需要生日。本問卷適用 18 歲以上成人；未滿 18 歲請尋求適合兒童或青少年的專業評估。', short:'年齡', fields:[['age','實足年齡','歲',18,120,'1']]},
+ {key:'neck', tag:'N · NECK CIRCUMFERENCE', title:'你的頸圍是多少？', help:'以軟尺繞頸部約喉結高度一圈，保持水平、貼合但不勒緊，以公分記錄。沒有軟尺或不確定，可選「不知道」。', short:'頸圍', fields:[['neck','頸圍','公分',15,100,'0.1']]},
+ {key:'male', tag:'G · GENDER', title:'依量表的男性項目，你是否為男性？', help:'STOP-Bang 將男性列為一項風險因子。若此二元分類不適合你的情況，或你不願回答，可選擇未知，再由醫療人員個別評估。', short:'男性項目'}
+];
+const app = document.querySelector('#app');
+const cookieName = 'sleep_risk_cloud_v1';
+const cookiePath = location.pathname.endsWith('/') ? location.pathname : location.pathname.slice(0,location.pathname.lastIndexOf('/')+1);
+const onlineReady = /^https:\/\//.test(CONFIG.endpoint) && CONFIG.controller.trim() && CONFIG.contact.trim() && Number.isInteger(CONFIG.retentionDays) && CONFIG.retentionDays > 0 && CONFIG.consentVersion.trim();
+let state = { answers:{}, step:0, screen:'welcome', local:false, upload:false, id:null, uploadStatus:'idle' };
+let saved = readSaved();
+let reviewing = false, toastTimer, uploadController;
+const esc = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function uuid(){ return crypto.randomUUID ? crypto.randomUUID() : '10000000-1000-4000-8000-100000000000'.replace(/[018]/g,c=>(c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)); }
+function readSaved(){
+ try {
+  const raw=document.cookie.split('; ').find(v=>v.startsWith(cookieName+'='));
+  if(!raw) return null;
+  const data=JSON.parse(decodeURIComponent(raw.slice(cookieName.length+1)));
+  if(data.version!==VERSION || !Number.isFinite(data.expires) || data.expires<=Date.now() || !validateAnswers(data.answers,true) || !Number.isInteger(data.step) || data.step<0 || data.step>7) return null;
+  if(data.screen==='result' && !validateAnswers(data.answers)) return null;
+  return data;
+ } catch { return null; }
+}
+function forgetCookie(){try{document.cookie=cookieName+'=; Max-Age=0; Path='+cookiePath+'; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');}catch{}}
+function persist(){
+ if(!state.local) return;
+ try {
+  const data={version:VERSION,answers:state.answers,step:state.step,screen:state.screen,id:state.id,expires:Date.now()+7*86400000,result:validateAnswers(state.answers)?evaluate(state.answers):null};
+  const encoded=encodeURIComponent(JSON.stringify(data));
+  document.cookie=cookieName+'='+encoded+'; Max-Age=604800; Path='+cookiePath+'; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');
+  if(!document.cookie.split('; ').some(c=>c===cookieName+'='+encoded)) throw new Error('Cookie unavailable');
+ } catch {state.local=false; toast('瀏覽器無法保存 Cookie；仍可完成本次評估。建議透過 localhost 或 HTTPS 開啟。');}
+}
+function toast(message){const el=document.querySelector('#toast');el.textContent=message;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,5500);}
+function title(text){return '<h2 id="focus-title" tabindex="-1">'+text+'</h2>';}
+function wave(){return '<svg class="mini-wave" viewBox="0 0 60 24" fill="none" aria-hidden="true"><path d="M1 12h12l5-7 7 15 7-18 7 10h19" stroke="currentColor" stroke-width="1.5"/></svg>';}
+function setProgress(label,value,side){document.querySelector('#progress-text').textContent=label;document.querySelector('#progress').value=value;document.querySelector('#progress-side').textContent=side;}
+function render(focus=true){
+ app.classList.remove('content'); void app.offsetWidth; app.classList.add('content');
+ if(state.screen==='welcome') welcome();
+ if(state.screen==='consent') consent();
+ if(state.screen==='question') question();
+ if(state.screen==='review') review();
+ if(state.screen==='result') result();
+ if(focus) document.querySelector('#focus-title')?.focus({preventScroll:true});
+}
+function welcome(){
+ setProgress('準備開始',0,'8 題 · 約 3 分鐘');
+ app.innerHTML='<div class="kicker"><span class="dot"></span> 從一個小小的關心開始</div>'+title('打呼，是身體給你的訊息。')+'<p class="muted">透過 8 個簡單問題，了解阻塞型睡眠呼吸中止症（OSA）的風險，找到適合自己的下一步。</p><div class="pill-row"><span class="pill">成人 STOP-Bang</span><span class="pill">不記名填寫</span><span class="pill">即時風險結果</span></div><div class="steps"><div><b>01 / 回答</b>認識睡眠狀況</div><div><b>02 / 了解</b>查看風險分級</div><div><b>03 / 行動</b>獲得下一步建議</div></div><div class="notice"><strong>開始前，請先知道</strong><br>適用 18 歲以上成人。本問卷僅供風險篩檢，不能取代醫師診斷或睡眠檢查。</div>'+(saved?'<button class="btn wide" id="resume">繼續上次的評估 →</button><button class="btn text wide" id="start">開始新的評估</button>':'<button class="btn wide" id="start">我是 18 歲以上，開始評估 →</button>')+'<p class="muted" style="font-size:11px;text-align:center;margin:12px 0 0">沒有標準答案，依照自己的情況回答就好。</p>';
+ document.querySelector('#start').onclick=()=>{ if(saved) confirmReset(()=>startFresh()); else startFresh(); };
+ document.querySelector('#resume')?.addEventListener('click',()=>{
+  state.answers=saved.answers;state.step=saved.step;state.local=true;state.screen=saved.screen==='result'?'result':'question';
+  state.id=typeof saved.id==='string'&&/^[0-9a-f-]{36}$/i.test(saved.id)?saved.id:uuid();state.upload=false;state.uploadStatus='idle';render();
+ });
+}
+function startFresh(){forgetCookie();saved=null;state={answers:{},step:0,screen:'consent',local:false,upload:false,id:uuid(),uploadStatus:'idle'};reviewing=false;render();}
+function consent(){
+ setProgress('資料由你決定',0,'不同意保存也能評估');
+ app.innerHTML='<div class="kicker">YOUR CHOICE</div>'+title('安心填答，資料由你掌握。')+'<p class="muted">我們不收集姓名、電話或 Email。以下兩個選項互相獨立，也都不是使用問卷的必要條件。</p><label class="check"><input id="local" type="checkbox" '+(state.local?'checked':'')+'><span>在此裝置保留答案 7 天<small>使用 Cookie 保存進度與結果，方便下次繼續。共用裝置建議不要勾選，可隨時清除。</small></span></label><label class="check"><input id="upload" type="checkbox" '+(state.upload?'checked':'')+' '+(!onlineReady?'disabled':'')+'><span>完成後上傳不記名結果<small>'+(onlineReady?'用途：風險統計。管理單位：'+esc(CONFIG.controller)+'；保存 '+CONFIG.retentionDays+' 天。完成後會自動提交，不包含姓名或聯絡資料。':'線上保存尚未啟用。目前僅在你的裝置上進行評估。')+'</small></span></label><div class="notice">未勾選本機保存時，離開或重新整理頁面後，答案將不保留。Cookie 可被同裝置使用者存取，不適合保存識別資料。</div><button class="btn text" id="details">閱讀完整資料說明 ↗</button><div class="actions"><button class="btn secondary" id="back">返回</button><button class="btn" id="begin">進入第 1 題 →</button></div>';
+ document.querySelector('#details').onclick=privacy;
+ document.querySelector('#back').onclick=()=>{state.screen='welcome';render();};
+ document.querySelector('#begin').onclick=()=>{state.local=document.querySelector('#local').checked;if(!state.local)forgetCookie();state.upload=Boolean(onlineReady&&document.querySelector('#upload').checked);state.screen='question';persist();render();};
+}
+function question(){
+ const q=questions[state.step], value=state.answers[q.key];
+ setProgress('第 '+(state.step+1)+'／8 題',state.step+1,q.short);
+ const choices=q.fields?[[null,'不知道／不願回答']]:[[true,'是'],[false,'否'],[null,'不知道／不願回答']];
+ const fields=q.fields?'<div class="field-grid">'+q.fields.map(([name,label,unit,min,max,step])=>'<label class="field">'+label+'<div class="input-wrap"><input id="'+name+'" type="number" inputmode="'+(name==='age'?'numeric':'decimal')+'" min="'+min+'" max="'+max+'" step="'+step+'" aria-describedby="q-help error" value="'+esc(value!=null?(q.key==='bmi'?value[name]:value)??'':'')+'" placeholder="'+(name==='height'?'例：170':name==='weight'?'例：65':name==='age'?'例：45':'例：38')+'"><span>'+unit+'</span></div></label>').join('')+'</div><p id="bmi-preview" class="muted" style="font-size:12px;margin-top:10px" aria-live="polite"></p>':'';
+ app.innerHTML='<div class="kicker">'+q.tag+wave()+'</div>'+title(q.title)+'<div id="q-help" class="help">'+q.help+'</div>'+fields+'<div role="radiogroup" aria-label="'+(q.fields?'無法提供數值時':'選擇答案')+'">'+choices.map(([v,label])=>'<button type="button" class="option '+(v===null?'unknown':'')+'" role="radio" aria-checked="'+(value===v)+'" data-value="'+JSON.stringify(v)+'"><span class="radio" aria-hidden="true"></span>'+label+'</button>').join('')+'</div><div id="error" class="error" role="alert"></div><div class="actions"><button class="btn secondary" id="prev">← '+(state.step===0?'資料選項':'上一題')+'</button><button class="btn" id="next">'+(reviewing?'返回答案確認':state.step===7?'檢查我的答案':'下一題 →')+'</button></div>';
+ app.querySelectorAll('[data-value]').forEach(btn=>{
+  btn.onclick=()=>{change(q.key,JSON.parse(btn.dataset.value)); if(q.fields) q.fields.forEach(([name])=>document.querySelector('#'+name).value='');updateChoice();previewBMI();};
+  btn.onkeydown=e=>{if(['ArrowDown','ArrowUp','ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const options=[...app.querySelectorAll('[data-value]')];let i=options.indexOf(btn);i=e.key==='Home'?0:e.key==='End'?options.length-1:(i+(['ArrowUp','ArrowLeft'].includes(e.key)?-1:1)+options.length)%options.length;options[i].focus();options[i].click();}};
+ });
+ q.fields?.forEach(([name])=>document.querySelector('#'+name).addEventListener('input',()=>{delete state.answers[q.key];state.id=uuid();state.uploadStatus='idle';captureNumber(q,false);updateChoice();previewBMI();persist();}));
+ function updateChoice(){app.querySelectorAll('[data-value]').forEach(b=>b.setAttribute('aria-checked',String(state.answers[q.key]===JSON.parse(b.dataset.value))));document.querySelector('#error').textContent='';}
+ function previewBMI(){if(q.key==='bmi'){const a=state.answers.bmi;document.querySelector('#bmi-preview').textContent=a?'BMI 約 '+(a.weight/(a.height/100)**2).toFixed(1)+'（以未四捨五入數值計分）':'';}}
+ previewBMI();
+ document.querySelector('#prev').onclick=()=>{if(state.step===0)state.screen='consent';else state.step--;persist();render();};
+ document.querySelector('#next').onclick=()=>{
+  if(q.fields && state.answers[q.key]!==null && !captureNumber(q,true))return;
+  if(!Object.hasOwn(state.answers,q.key)){document.querySelector('#error').textContent='請選擇答案，也可以選「不知道／不願回答」。';return;}
+  if(reviewing){state.screen='review';reviewing=false;}else if(state.step===7)state.screen='review';else state.step++;
+  persist();render();
+ };
+}
+function captureNumber(q,showError){
+ const vals={};let bad;
+ for(const [name,label,unit,min,max,step] of q.fields){const input=document.querySelector('#'+name);const n=Number(input.value);if(!input.value || !Number.isFinite(n) || n<min || n>max || (step==='1'&&!Number.isInteger(n))){bad={input,message:label+'請填寫 '+min+'–'+max+' '+unit+(step==='1'?'的整數':'的數值')+'，或選擇未知。'};break;}vals[name]=n;}
+ if(bad){if(showError){document.querySelector('#error').textContent=bad.message;bad.input.focus();}return false;}
+ change(q.key,q.key==='bmi'?vals:vals[q.key]);return true;
+}
+function change(key,value){if(JSON.stringify(state.answers[key])!==JSON.stringify(value)){state.id=uuid();state.uploadStatus='idle';}state.answers[key]=value;persist();}
+function answerText(q){const v=state.answers[q.key];if(v===null)return '不知道／不願回答';if(v===undefined)return '尚未填答';if(q.key==='bmi')return v.height+' 公分／'+v.weight+' 公斤 · BMI '+(v.weight/(v.height/100)**2).toFixed(1);if(q.key==='age')return v+' 歲';if(q.key==='neck')return v+' 公分';return v?'是':'否';}
+function review(){
+ setProgress('檢查你的答案',8,'確認後查看結果');
+ app.innerHTML='<div class="kicker">ONE LAST LOOK</div>'+title('這些答案，符合你的狀況嗎？')+'<p class="muted">可以修改任何一題。不確定的答案不會被當作「否」。</p>'+questions.map((q,i)=>'<div class="review-row"><div><strong>'+String(i+1).padStart(2,'0')+' · '+q.short+'</strong><span>'+esc(answerText(q))+'</span></div><button data-edit="'+i+'" aria-label="修改'+q.short+'">修改</button></div>').join('')+'<div class="actions"><button class="btn secondary" id="prev">← 上一題</button><button class="btn" id="finish">查看我的結果 →</button></div>';
+ app.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>{state.step=Number(b.dataset.edit);state.screen='question';reviewing=true;render();});
+ document.querySelector('#prev').onclick=()=>{state.step=7;state.screen='question';reviewing=false;render();};
+ document.querySelector('#finish').onclick=()=>{
+  if(!validateAnswers(state.answers)){state.step=questions.findIndex(q=>!Object.hasOwn(state.answers,q.key));state.screen='question';render();return;}
+  state.screen='result';persist();render();if(state.upload&&state.uploadStatus==='idle')submit();
+ };
+}
+function result(){
+ const r=evaluate(state.answers), labels={low:'低風險',medium:'中風險',high:'高風險',incomplete:'資料尚未完整'};
+ setProgress('你的評估結果',8,'STOP-Bang · 基本總分分級');
+ const suggestions={low:'目前基本總分落在低風險範圍。這不代表完全排除睡眠呼吸中止症，仍請留意持續打呼、睡眠中呼吸停止或白天明顯嗜睡。',medium:'建議安排睡眠門診、胸腔科或耳鼻喉科評估。醫師會綜合你的症狀與健康狀況，判斷是否需要睡眠檢查。',high:'建議儘早安排專業睡眠評估，與醫師討論是否需要睡眠檢查。高風險不是確診，也不代表疾病一定嚴重。',incomplete:'有部分答案未知，目前不能提供完整風險分級。你可以補填答案，或帶著已知資訊向醫療人員諮詢。'};
+ app.innerHTML='<div class="kicker">A STEP TOWARD BETTER SLEEP</div><div class="result-top '+r.risk+'"><div class="result-orb"><strong>'+r.score+'</strong><span>'+(r.complete?'總分／8 分':'已知得分')+'</span></div><div><span class="risk-chip">'+(r.complete?'風險篩檢結果':'尚無完整分級')+'</span>'+title(labels[r.risk])+'<span class="muted">'+(r.complete?'了解風險，是照顧自己的第一步。':'還有 '+r.missing.length+' 項待補充')+'</span></div></div><p class="muted">'+suggestions[r.risk]+'</p>'+(r.missing.length?'<div class="notice"><strong>待補項目</strong><br>'+r.missing.map(k=>questions.find(q=>q.key===k).short).join('、')+'</div>':'')+'<h3 style="font-size:14px;margin-top:24px">你的得分項目</h3><div class="score-items">'+(questions.filter(q=>r.points[q.key]===1).map(q=>'<span>'+q.short+' +1</span>').join('')||'<span>目前已知答案沒有得分項目</span>')+'</div><p class="muted" style="font-size:12px">基本分級：0–2 分低風險 · 3–4 分中風險 · 5–8 分高風險。<br>本頁未使用其他組合判定規則。</p><div class="notice"><strong>請記得</strong><br>本評估不能取代醫師診斷或睡眠檢查。即使分數偏低，若有睡眠中呼吸停止或明顯日間嗜睡，仍建議就醫評估。嗜睡時應避免駕駛。</div><div class="upload" id="upload-box"></div><div class="actions"><button class="btn secondary" id="edit">修改答案</button><button class="btn" id="restart">重新評估 ↻</button></div>';
+ uploadBox();
+ document.querySelector('#edit').onclick=()=>{state.screen='review';render();};
+ document.querySelector('#restart').onclick=()=>confirmReset(()=>{uploadController?.abort();startFresh();});
+}
+function uploadBox(){
+ const box=document.querySelector('#upload-box');if(!box)return;
+ const status={idle:'尚未上傳',pending:'正在安全提交…',success:'已儲存至伺服器',failed:'本次未確認上傳成功；答案仍在此頁。可重試，系統會避免重複紀錄。'};
+ box.innerHTML='<strong style="font-size:13px">不記名資料保存</strong><p role="status" style="margin:6px 0 12px">'+(!onlineReady?'線上保存尚未啟用。你的答案未傳送至伺服器。':status[state.uploadStatus])+'</p>'+(onlineReady&&state.uploadStatus!=='success'?(!state.upload?'<label class="check"><input id="result-consent" type="checkbox"><span>我同意上傳，用於不記名風險統計。<small>管理單位：'+esc(CONFIG.controller)+' · 保存 '+CONFIG.retentionDays+' 天。<br>聯絡方式：'+esc(CONFIG.contact)+'</small></span></label>':'')+'<button id="submit" class="btn" '+(state.uploadStatus==='pending'||!state.upload?'disabled':'')+'>'+(state.uploadStatus==='failed'?'重試上傳':'上傳不記名結果')+'</button>':'')+(state.uploadStatus==='success'?'<p style="font-size:11px;margin:0;overflow-wrap:anywhere">紀錄識別碼：'+esc(state.id)+'<br>若需申請刪除，請保留此碼並聯絡：'+esc(CONFIG.contact)+'</p>':'');
+ document.querySelector('#result-consent')?.addEventListener('change',e=>{state.upload=e.target.checked;document.querySelector('#submit').disabled=!state.upload;});
+ document.querySelector('#submit')?.addEventListener('click',submit);
+}
+async function submit(){
+ if(!onlineReady||!state.upload||state.uploadStatus==='pending'||state.uploadStatus==='success')return;
+ state.uploadStatus='pending';uploadBox();const id=state.id;uploadController=new AbortController();const controller=uploadController;const timer=setTimeout(()=>controller.abort(),15000);
+ try{
+  const response=await fetch(CONFIG.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},credentials:'omit',signal:controller.signal,body:JSON.stringify({submissionId:id,questionnaireVersion:VERSION,answers:state.answers,consent:true,consentVersion:CONFIG.consentVersion})});
+  const data=await response.json();if(!response.ok||data.status!=='saved'||data.submissionId!==id)throw new Error('Submission not confirmed');
+  if(state.id===id)state.uploadStatus='success';
+ }catch{if(state.id===id)state.uploadStatus='failed';}finally{clearTimeout(timer);if(state.id===id)uploadBox();}
+}
+function privacy(){
+ openDialog('隱私與資料說明','<p>問卷不收集姓名、電話、Email 或生日；請勿在任何地方填入可識別個人的資料。</p><ul><li>本機保存：只有勾選同意才寫入 Cookie，最後保存後 7 天到期。Cookie 不是加密儲存，可隨時清除。</li><li>線上保存：只有另行同意才提交答案、問卷版本、分數、風險分級、隨機識別碼、同意版本與時間。</li><li>不使用廣告或追蹤分析。應用資料表不保存 IP，但代管平台可能保有連線紀錄，不代表完全無法識別。</li><li>清除本機資料不會刪除已上傳的紀錄；如已上傳，請先保留紀錄識別碼。</li></ul>'+(onlineReady?'<p>管理單位：'+esc(CONFIG.controller)+'<br>用途：不記名風險統計<br>保存期限：'+CONFIG.retentionDays+' 天（到期後於每日清理時刪除）<br>聯絡／刪除申請：'+esc(CONFIG.contact)+'<br>同意文字版本：'+esc(CONFIG.consentVersion)+'</p>':'<p><strong>目前線上保存尚未啟用，答案不會上傳。</strong></p>')+'<p>採用成人 STOP-Bang 架構與基本總分分級。繁體中文說明為白話呈現，並非宣稱經驗證的官方翻譯。量表資訊：<a href="https://www.stopbang.ca/" target="_blank" rel="noopener noreferrer">STOP-Bang 官方網站</a>。</p>');
+}
+function openDialog(heading,body,confirmText,onConfirm){
+ const d=document.querySelector('#dialog');d.innerHTML='<h2 id="dialog-title">'+heading+'</h2>'+body+'<div class="actions end"><button class="btn secondary" id="close-dialog">'+(onConfirm?'取消':'關閉')+'</button>'+(onConfirm?'<button class="btn" id="confirm-dialog">'+confirmText+'</button>':'')+'</div>';
+ document.querySelector('#close-dialog').onclick=()=>d.close();document.querySelector('#confirm-dialog')?.addEventListener('click',()=>{d.close();onConfirm();});d.showModal();
+}
+function confirmReset(callback){openDialog('開始新的評估？','<p>這會清除目前答案與本機紀錄，已上傳的紀錄不會刪除。若需要申請刪除，請先保留結果頁的紀錄識別碼。</p>','開始新的評估',callback);}
+function clearLocal(){openDialog('清除本機資料？','<p>會清除 Cookie 與本次填答內容，並回到首頁。已送出的伺服器資料不會因此刪除；若需申請刪除，請先保留紀錄識別碼。</p>','清除並回到首頁',()=>{uploadController?.abort();forgetCookie();saved=null;state={answers:{},step:0,screen:'welcome',local:false,upload:false,id:uuid(),uploadStatus:'idle'};reviewing=false;render();toast('本機紀錄與本次答案已清除。');});}
+document.querySelector('#privacy-btn').onclick=privacy;document.querySelector('#clear-btn').onclick=clearLocal;
+render(false);
+</script>
+<noscript><p style="padding:24px;text-align:center">本問卷需要 JavaScript 才能逐題作答與計分，請啟用 JavaScript 後重新載入。</p></noscript>
+</body></html>
